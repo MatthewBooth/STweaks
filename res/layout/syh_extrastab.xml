@@ -38,15 +38,7 @@
         android:text="@string/reset_settings"
         />   
         
-       	<Button 
-        android:id="@+id/FlashKernel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:typeface="serif"
-        android:textColor="#ffffffff"
-        android:text="@string/flash_kernel"/>
-        
-        <TextView
+       	<TextView
         android:id="@+id/textViewKernelVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

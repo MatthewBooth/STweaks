@@ -38,8 +38,6 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
  		 }
  		 
  		 
- 		 final Button button2 = (Button) v.findViewById(R.id.FlashKernel);
- 		 button2.setOnClickListener(this);
      	 final Button button4 = (Button) v.findViewById(R.id.ResetSettings);
  		 button4.setOnClickListener(this);
   		 
@@ -65,10 +63,6 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()) {
-        case R.id.FlashKernel:
-           	Toast toast1 = Toast.makeText(mContext, R.string.coming_soon, Toast.LENGTH_LONG);
-        	toast1.show();  
-            break;
         case R.id.ResetSettings:
         	AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         	builder.setMessage("All settings will be reset. You will have to relaunch the application.")
