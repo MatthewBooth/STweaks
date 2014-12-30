@@ -14,5 +14,7 @@
     <string name="developer_info">Developed by Gokhan Moral</string>
     <string name="developer_info_2">Modified by Googy Anas and Kryten2k35</string>
     <string name="startmenu_no_root">No root access, or timeout!</string>
+    <string name="donate_to_developer">Donate to kernel developer (Googy Anas)</string>
+    <string name="donate_url">http://forum.xda-developers.com/donatetome.php?u=1897326</string>
     
 </resources>

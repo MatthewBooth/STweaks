@@ -6,7 +6,9 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -40,6 +42,9 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
  		 
      	 final Button button4 = (Button) v.findViewById(R.id.ResetSettings);
  		 button4.setOnClickListener(this);
+ 		 
+ 		final Button button2 = (Button) v.findViewById(R.id.DonateToDeveloper);
+		 button2.setOnClickListener(this);
   		 
     	 final TextView tv2 = (TextView) v.findViewById(R.id.textViewKernelVersion);
     	 tv2.setText("Kernel version: " + System.getProperty("os.version"));
@@ -63,6 +68,12 @@ public class SyhExtrasTab extends SyhTab implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch(v.getId()) {
+		case R.id.DonateToDeveloper:
+			String url = mContext.getResources().getString(R.string.donate_url);
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.setData(Uri.parse(url));
+			mContext.startActivity(intent);
+			break;
         case R.id.ResetSettings:
         	AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         	builder.setMessage("All settings will be reset. You will have to relaunch the application.")

@@ -45,6 +45,15 @@
         android:typeface="serif"
         android:textColor="#ffffffff"
         android:text="@string/reset_settings"
+        />
+       	
+       	<Button 
+        android:id="@+id/DonateToDeveloper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textColor="#ffffffff"
+        android:text="@string/donate_to_developer"
         />   
         
        	<TextView
