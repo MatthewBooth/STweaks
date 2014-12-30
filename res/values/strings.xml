@@ -12,6 +12,7 @@
     <string name="coming_soon">Coming soon!</string>
     <string name="reset_settings">Reset settings to default</string>
     <string name="developer_info">Developed by Gokhan Moral</string>
+    <string name="developer_info_2">Modified by Googy Anas and Kryten2k35</string>
     <string name="startmenu_no_root">No root access, or timeout!</string>
     
 </resources>
