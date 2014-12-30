@@ -1,5 +1,7 @@
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.DeviceDefault" />
+    <style name="AppTheme" parent="android:Theme.DeviceDefault">
+        <item name="valueColor">@color/holo_blue_light</item>
+    </style>
 
 </resources>

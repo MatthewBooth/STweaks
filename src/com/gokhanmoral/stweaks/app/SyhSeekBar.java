@@ -1,6 +1,7 @@
 package com.gokhanmoral.stweaks.app;
 
 import android.app.Activity;
+import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.util.Log;
 import android.view.Gravity;
@@ -76,8 +77,11 @@ public final class SyhSeekBar extends SyhControl implements OnSeekBarChangeListe
 		
         //TODO: Move this to xml
 		seekBarValueText = new TextView(context);
-        seekBarValueText.setTextColor(Color.WHITE);
-        seekBarValueText.setBackgroundColor(Color.BLACK);
+		int[] attrs = new int[] { R.attr.valueColor };
+		TypedArray ta = context.obtainStyledAttributes(attrs);		
+        seekBarValueText.setTextColor(ta.getColor(0, Color.WHITE));
+        ta.recycle();
+        seekBarValueText.setBackgroundColor(Color.TRANSPARENT);
         seekBarValueText.setText(valueFromUser + " " + unit);
         seekBarValueText.setGravity(Gravity.CENTER);
 		controlLayout.addView(seekBarValueText);        
