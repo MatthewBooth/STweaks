@@ -83,7 +83,7 @@ public final class SyhSeekBar extends SyhControl implements OnSeekBarChangeListe
         ta.recycle();
         seekBarValueText.setBackgroundColor(Color.TRANSPARENT);
         seekBarValueText.setText(valueFromUser + " " + unit);
-        seekBarValueText.setGravity(Gravity.CENTER);
+        seekBarValueText.setGravity(Gravity.RIGHT);
 		controlLayout.addView(seekBarValueText);        
         
 	}
